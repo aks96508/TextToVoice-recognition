@@ -1,3 +1,11 @@
 # TextToVoice-recognition
-This Case was created by Python.. 
-Python provides inbuilt libraries to import the Text to Voice
+from gtts import gTTS
+import os
+
+mytext="Welcome Mylove"
+language="en"
+
+myconv=gTTS(text=mytext,lang=language,slow=False)
+
+myconv.save("Hello.mp3")
+os.system("Hello.mp3")
